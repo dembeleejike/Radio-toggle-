@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    Background: #fff8f2;
+    color: #2e1a16;
+    padding: 2rem;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+header{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.brand{
+    font-size: 3rem;
+    color: #ff4081;
+    font-weight: bold;
+}
+
+.tagline{
+    font-size: 1rem;
+    color: #7a3e2f;
+    font-style: italic;
+}
+
+.product-display{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    
+}
+
+.gallery{
+    flex: 1;
+    position: relative;
+}
+
+.gallery input{
+    display: none;
+}
+.images{
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.image{
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+#img1:checked ~ .images #slide1,
+#img2:checked ~ .images #slide2,
+#img3:checked ~ .images #slide3,
+#img4:checked ~ .images #slide4,
+#img5:checked ~ .images #slide5{
+  display: block;
+}
+
+
+.image img{
+  width: 300%;
+  object-fit: cover;
+  border-radius hi: 10px;
+}
+
+.thumbnails{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.thumbnails label{
+  cursor: pointer;
+}
+
+.thumbnails img{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.product-info{
+    flex:1;
+}
+.product-info h2{
+    font-size: 1.5rem;
+    color: mediumvioletred;
+    padding-top: 20px;
+}
+.description{
+    margin: 1rem;
+    line-height: 1.5;
+}
+.price{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+button{
+    color: white;
+    border: none;
+    background: #ff4081;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5rem;
+    cursor: pointer;
+}
